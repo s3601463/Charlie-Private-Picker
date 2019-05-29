@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTC-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="Effect();">
+<div  class="text">
+<pre id="main">
+<!--
+>Welcome To Computer Parts Picker Created By JesusChrist and The Apostles<br/>
+========================================================================================================================================<br/>
+>Choose from one of the following categories<br>
+1. Team Profile<br/>
+2. Project Data<br/>
+3. Skills and Jobs<br/>
+4. Group Reflection<br/>
+5. Audit Report<br/>-->
+</pre>
+</div>
+
+<script>
+	var body = [">Welcome To Computer Parts Picker Created By JesusChrist and The Apostles", "========================================================================================================================================", ">Choose from one of the following categories", "1. Team Profile", "2. Project Data", "3. Skills and Jobs", "4. Group Reflection", "5. Audit Report"]
+	var i = 0;
+	var delay = 100;
+	var n = 0;
+	var text = " ";
+	function type{
+		//text = txt;
+		if(i < text.length){
+			document.getElementById("main").innerHTML += text.charAt(i);
+			i++;
+			setTimeout(type, delay);
+		}
+		if(i = text.length)
+			document.getElementById("main").innerHTML += "\n";
+	}	
+	function Effect(){
+		while (n < body.length) {
+			text = body[n];
+			type();
+			i=0;
+			n++;
+		}
+	}	
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,23 @@
+pre {
+	font-family: 'Lucida Console', monospace;
+	color: #37FF2E;
+}
+.list{
+	/*text-indent: 3vw;*/
+	margin-left: 3vw;
+}
+body{
+	background-color: black;
+}
+/*.typingEffect{
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0;
+	letter-spacing: .1em;
+	animation: typing 4s steps(40, end);
+}
+
+@keyframes typing{
+	from{ width: 0}
+	to { width: 100%}
+}*/
