@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 
-<body onload="Effect();">
+<body onload="type();">
 <div  class="text">
 <pre id="main">
 <!--
@@ -23,29 +23,36 @@
 </div>
 
 <script>
-	var body = [">Welcome To Computer Parts Picker Created By JesusChrist and The Apostles", "========================================================================================================================================", ">Choose from one of the following categories", "1. Team Profile", "2. Project Data", "3. Skills and Jobs", "4. Group Reflection", "5. Audit Report"]
+	var body = ">Welcome To Computer Parts Picker Created By JesusChrist and The Apostles|========================================================================================================================================|>Choose from one of the following categories|~1. Team Profile|~2. Project Data|~3. Skills and Jobs|~4. Group Reflection|~5. Audit Report";
 	var i = 0;
 	var delay = 100;
 	var n = 0;
-	var text = " ";
-	function type{
-		//text = txt;
-		if(i < text.length){
-			document.getElementById("main").innerHTML += text.charAt(i);
+	var text = "";
+	function type(){
+		text = body.charAt(i);
+		if (text == "|"){
+			text = "\n";
+		} else if (text == "~") {
+			text = "	";
+		} else {
+			text = text;
+		}		
+		if(i < /*text*/body.length){
+			document.getElementById("main").innerHTML += text;
 			i++;
 			setTimeout(type, delay);
 		}
-		if(i = text.length)
-			document.getElementById("main").innerHTML += "\n";
+		//if(i = text.length)
+		//	document.getElementById("main").innerHTML += "\n";
 	}	
-	function Effect(){
+	/*function Effect(){
 		while (n < body.length) {
 			text = body[n];
 			type();
 			i=0;
 			n++;
 		}
-	}	
+	}*/	
 </script>
 </body>
 
