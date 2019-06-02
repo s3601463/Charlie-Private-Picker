@@ -1,6 +1,8 @@
 pre {
 	font-family: 'Lucida Console', monospace;
 	color: #37FF2E;
+	text-align: left;
+	font-size:14px;
 }
 .list{
 	/*text-indent: 3vw;*/
@@ -8,7 +10,18 @@ pre {
 }
 body{
 	background-color: black;
+	max-width: 98vw;
 }
+
+input[type=text] {
+	border: none;
+	background-color: black;
+	font-family: 'Lucida Console', monospace;
+	color: #37FF2E;
+}
+
+
+
 /*.typingEffect{
 	overflow: hidden;
 	white-space: nowrap;
